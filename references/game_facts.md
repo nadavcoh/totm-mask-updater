@@ -32,7 +32,7 @@ Read this when something in the video or the data looks odd. Everything here was
 
 ## Page conventions (do not change without being asked)
 - All mask data lives in two JS blocks near the top of the script in index.html: `const MASKS = [...]` and `const LOCKED = [...]`, plus `DEFAULT_COINS`. The table, progress bar, locked list, advisor and Oracle chatbot prompt are all generated from them. Update data only; do not hand-edit table rows.
-- The user does NOT want code delivered as tar.gz (saved preference). Present index.html itself with present_files and push it to GitHub. (An earlier version of this skill said tar.gz; that was superseded.)
+- The user does NOT want code delivered as tar.gz (saved preference). Push index.html to GitHub and do not present it in chat either (the user said so on Nov 16 2026). (An earlier version of this skill said tar.gz; that was superseded.)
 - The page lives in the GitHub repo nadavcoh/masks-pwa (main): index.html, manifest.json, sw.js, icons/ and the wiki Masks page saved as HTML and PDF. Pull it from there instead of asking for an upload and push the result back to main (scripts/fetch_index.sh, scripts/push_github.sh). The user's older commits there are "Update from iOS: date"; ours use "Update masks from video YYYY-MM-DD: ...".
 - The page registers a service worker. In the repo, sw.js uses `const CACHE_NAME = 'totm-masks-__COMMIT_HASH__'`, a placeholder filled per commit, so no manual cache bump is needed after a push. Only mention a bump if a sw.js without that placeholder shows up.
 

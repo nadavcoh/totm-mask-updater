@@ -1,6 +1,6 @@
 ---
 name: totm-mask-updater
-description: Update the user's Tomb of the Mask mask-tracker web page (index.html, GitHub repo nadavcoh/masks-pwa) from a screen recording of the in-game Masks screen. Reads mask levels, newly unlocked masks, locked masks and the coin balance from the video, looks up bonuses for new masks, patches the page data, verifies it, pushes it to GitHub and presents index.html. Use this whenever the user uploads a Tomb of the Mask video or screenshots (with or without index.html), invokes /totm-mask-updater, or says things like "update my masks", "I unlocked new masks", "update levels from this video", "refresh the mask table", even if they do not name the skill.
+description: Update the user's Tomb of the Mask mask-tracker web page (index.html, GitHub repo nadavcoh/masks-pwa) from a screen recording of the in-game Masks screen. Reads mask levels, newly unlocked masks, locked masks and the coin balance from the video, looks up bonuses for new masks, patches the page data, verifies it and pushes it to GitHub (the push is the delivery; index.html is not presented in chat). Use this whenever the user uploads a Tomb of the Mask video or screenshots (with or without index.html), invokes /totm-mask-updater, or says things like "update my masks", "I unlocked new masks", "update levels from this video", "refresh the mask table", even if they do not name the skill.
 ---
 
 # Tomb of the Mask mask updater
@@ -50,7 +50,7 @@ Scripts are in `scripts/`: `fetch_index.sh` (pull the page from GitHub), `extrac
 6. **Verify**: `python3 scripts/verify_page.py work/index.html` must print PASS (no JS errors, table rows == MASKS, locked list == LOCKED). It also prints the best mask per situation.
 
 7. **Deliver and push** (the user's standing workflow: pull index.html from GitHub, update it, push it back):
-   - Copy the file to `/mnt/user-data/outputs/index.html` and `present_files` it. **Never deliver as tar.gz**: the user's saved preference is no tar.gz for code changes (the old version of this skill said the opposite; the preference wins).
+   - **Do not present index.html** (no `present_files`, no copy to outputs): the user said not to, the push to GitHub is the delivery. If the push is impossible (access error, or the user uploaded the page and did not want a push), say so and only then offer the file. Never deliver code as tar.gz either (saved preference; the old version of this skill said the opposite).
    - Push to `main` of `nadavcoh/masks-pwa`: when the page came from GitHub, do it right after verify PASS and every warning is resolved, without asking again (the user answered "Push" every time). When the user uploaded their own index.html, offer instead of pushing.
      1. Load the connector tools: `tool_search` query `gh-push-mcp` (they are deferred).
      2. `git_credentials` with `repo: nadavcoh/masks-pwa`, `mode: write`. The token appears in the tool result.
@@ -62,7 +62,7 @@ Scripts are in `scripts/`: `fetch_index.sh` (pull the page from GitHub), `extrac
 8. **Reply briefly**: newly unlocked masks with their bonuses, how many levels changed (name the biggest jumps), progress (e.g. 59 / 59 unlocked) and what is still locked, the old -> new coin balance, the pushed commit hash, and anything you were unsure of or that disagrees with the wiki. Mention if masks switched between coin and card upgrades. Service worker: the repo's `sw.js` names its cache `totm-masks-__COMMIT_HASH__`, so a new commit refreshes it by itself; say only "reload once or twice if the PWA shows old data". Do not narrate the tooling. Refer to files by name, not "above"/"below".
 
 ## Things not to do
-- Do not ask the user to upload index.html (fetch it from GitHub), do not wait for permission to push after a clean verify, and do not deliver tar.gz.
+- Do not ask the user to upload index.html (fetch it from GitHub), do not wait for permission to push after a clean verify, do not present index.html as a file, and do not deliver tar.gz.
 - Do not run `diff <(...)` in the bash tool (it is /bin/sh); use `git diff --stat` or `cmp`.
 - Do not hand-edit table rows or rewrite the page; edit data only through `apply_update.py`.
 - Do not change the advisor logic. The user rejected "bonus per coin" planning because only the equipped mask's bonuses apply; the advisor ranks masks per situation.
