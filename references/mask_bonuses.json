@@ -1,0 +1,496 @@
+{
+ "_about": "Base (Lvl 1) bonuses in %, special effect and unlock method for every mask on the Tomb of the Mask Wiki Masks table (scraped Oct 2026). Keys match the MASKS data in index.html: coins, score, bonus, freezes, magnets, addicts. Used by apply_update.py for masks that are new to index.html or still locked.",
+ "_authority": "For masks ALREADY in index.html, the values in index.html win. The wiki is wrong or garbled for these (index.html values were taken from the game): Bull, Koala, Wizard, Fire, Eagle, A4. Do not overwrite them from this file.",
+ "_ingame_confirmed": "Travelboy and Nikandr have a coin bonus that starts at 0% and grows +0.1%/level (Travelboy Lvl15 = 1.4%, Nikandr Lvl21 = 2.0%), even though the wiki says they have no bonuses.",
+ "_wiki_only_names": "Spider, Creepy, Sponge are on the wiki but were not in the app grid in Oct 2026. They may appear in future recordings; if so use these entries.",
+ "masks": {
+  "Travelboy": {
+   "b": {
+    "coins": 0
+   },
+   "s": "",
+   "unlock": "-"
+  },
+  "Cyclop": {
+   "b": {
+    "coins": 20
+   },
+   "s": "",
+   "unlock": "200 coins"
+  },
+  "Spaceman": {
+   "b": {
+    "magnets": 30,
+    "addicts": 20
+   },
+   "s": "",
+   "unlock": "EUR 4.99"
+  },
+  "Agent": {
+   "b": {
+    "coins": 40,
+    "magnets": 20,
+    "freezes": 20
+   },
+   "s": "",
+   "unlock": "Premium subscription"
+  },
+  "Monkey": {
+   "b": {
+    "coins": 30,
+    "bonus": 10
+   },
+   "s": "No Monkeys",
+   "unlock": "EUR 4.99"
+  },
+  "Chef": {
+   "b": {
+    "coins": 10,
+    "score": 20
+   },
+   "s": "",
+   "unlock": "5 video ads"
+  },
+  "Bull": {
+   "b": {
+    "bonus": 20,
+    "score": 30
+   },
+   "s": "",
+   "unlock": "EUR 4.99"
+  },
+  "Crow": {
+   "b": {
+    "bonus": 20
+   },
+   "s": "",
+   "unlock": "500 coins"
+  },
+  "Plague": {
+   "b": {
+    "freezes": 25,
+    "bonus": 35
+   },
+   "s": "",
+   "unlock": "EUR 4.99"
+  },
+  "Koala": {
+   "b": {
+    "coins": 10,
+    "bonus": 35
+   },
+   "s": "",
+   "unlock": "Premium subscription"
+  },
+  "Bear": {
+   "b": {
+    "freezes": 20
+   },
+   "s": "No Snakes",
+   "unlock": "10 video ads"
+  },
+  "Samurai": {
+   "b": {
+    "magnets": 30,
+    "addicts": 30
+   },
+   "s": "",
+   "unlock": "EUR 4.99"
+  },
+  "Dog": {
+   "b": {
+    "coins": 20
+   },
+   "s": "No Snakes",
+   "unlock": "1000 coins"
+  },
+  "Demon": {
+   "b": {
+    "addicts": 30,
+    "score": 20
+   },
+   "s": "",
+   "unlock": "EUR 4.99"
+  },
+  "Pumpkin": {
+   "b": {
+    "freezes": 15,
+    "bonus": 20
+   },
+   "s": "",
+   "unlock": "10 video ads"
+  },
+  "Spectrum": {
+   "b": {
+    "magnets": 20,
+    "score": 30
+   },
+   "s": "",
+   "unlock": "EUR 4.99"
+  },
+  "Robot": {
+   "b": {
+    "coins": 30,
+    "addicts": 20
+   },
+   "s": "",
+   "unlock": "Wheel of Fortune"
+  },
+  "Alien": {
+   "b": {
+    "magnets": 30
+   },
+   "s": "No Snakes",
+   "unlock": "EUR 4.99"
+  },
+  "Kitty": {
+   "b": {
+    "coins": 20,
+    "magnets": 10
+   },
+   "s": "",
+   "unlock": "1000 coins"
+  },
+  "Assassin": {
+   "b": {
+    "freezes": 15
+   },
+   "s": "No Monkeys",
+   "unlock": "Wheel of Fortune"
+  },
+  "Cowboy": {
+   "b": {
+    "magnets": 20,
+    "score": 20
+   },
+   "s": "",
+   "unlock": "10 video ads"
+  },
+  "Zombie": {
+   "b": {
+    "coins": 10,
+    "freezes": 35
+   },
+   "s": "No Snakes",
+   "unlock": "EUR 4.99"
+  },
+  "Piggy": {
+   "b": {
+    "coins": 50,
+    "addicts": 10
+   },
+   "s": "",
+   "unlock": "Premium subscription"
+  },
+  "Anonym": {
+   "b": {
+    "coins": 35,
+    "score": 35
+   },
+   "s": "",
+   "unlock": "Unknown"
+  },
+  "Hippo": {
+   "b": {
+    "coins": 25,
+    "score": 20
+   },
+   "s": "",
+   "unlock": "Wheel of Fortune"
+  },
+  "Pirate": {
+   "b": {
+    "coins": 20
+   },
+   "s": "No Monkeys",
+   "unlock": "1000 coins"
+  },
+  "Spider": {
+   "b": {
+    "addicts": 35,
+    "bonus": 35
+   },
+   "s": "",
+   "unlock": "EUR 6.99"
+  },
+  "Viking": {
+   "b": {
+    "coins": 10,
+    "bonus": 30
+   },
+   "s": "",
+   "unlock": "10 video ads"
+  },
+  "Eagle": {
+   "b": {
+    "magnets": 35,
+    "freezes": 35
+   },
+   "s": "",
+   "unlock": "EUR 6.99"
+  },
+  "Mouse": {
+   "b": {
+    "freezes": 30,
+    "bonus": 10
+   },
+   "s": "",
+   "unlock": "Wheel of Fortune"
+  },
+  "Rabbit": {
+   "b": {
+    "coins": 30,
+    "freezes": 10
+   },
+   "s": "",
+   "unlock": "2000 coins"
+  },
+  "Creepy": {
+   "b": {
+    "coins": 20,
+    "freezes": 30
+   },
+   "s": "",
+   "unlock": "EUR 4.99"
+  },
+  "Froggy": {
+   "b": {
+    "magnets": 10,
+    "score": 40
+   },
+   "s": "",
+   "unlock": "Premium subscription"
+  },
+  "Diver": {
+   "b": {
+    "addicts": 15,
+    "bonus": 25
+   },
+   "s": "",
+   "unlock": "10 video ads"
+  },
+  "Robin": {
+   "b": {
+    "addicts": 35,
+    "freezes": 35
+   },
+   "s": "",
+   "unlock": "EUR 6.99"
+  },
+  "Knight": {
+   "b": {
+    "coins": 20,
+    "score": 20
+   },
+   "s": "",
+   "unlock": "Wheel of Fortune"
+  },
+  "Sponge": {
+   "b": {
+    "addicts": 40
+   },
+   "s": "No Monkeys",
+   "unlock": "EUR 6.99"
+  },
+  "Shapito": {
+   "b": {
+    "magnets": 10,
+    "freezes": 10,
+    "bonus": 10
+   },
+   "s": "",
+   "unlock": "3000 coins"
+  },
+  "King": {
+   "b": {
+    "coins": 20,
+    "addicts": 30
+   },
+   "s": "",
+   "unlock": "EUR 4.99"
+  },
+  "Frankie": {
+   "b": {
+    "magnets": 30,
+    "score": 10
+   },
+   "s": "No Snakes",
+   "unlock": "15 video ads"
+  },
+  "Slime": {
+   "b": {
+    "magnets": 15
+   },
+   "s": "No Snakes",
+   "unlock": "Wheel of Fortune"
+  },
+  "Black": {
+   "b": {
+    "bonus": 35,
+    "score": 35
+   },
+   "s": "",
+   "unlock": "EUR 6.99"
+  },
+  "Skull": {
+   "b": {
+    "coins": 35,
+    "addicts": 15,
+    "freezes": 15
+   },
+   "s": "",
+   "unlock": "4000 coins"
+  },
+  "Jester": {
+   "b": {
+    "bonus": 15,
+    "score": 15
+   },
+   "s": "No Monkeys",
+   "unlock": "10 video ads"
+  },
+  "Screamy": {
+   "b": {
+    "coins": 10,
+    "freezes": 30
+   },
+   "s": "",
+   "unlock": "EUR 4.99"
+  },
+  "Voodoo": {
+   "b": {
+    "coins": 40,
+    "addicts": 20,
+    "freezes": 20
+   },
+   "s": "",
+   "unlock": "5000 coins"
+  },
+  "Gas": {
+   "b": {
+    "freezes": 25,
+    "bonus": 20
+   },
+   "s": "",
+   "unlock": "EUR 4.99"
+  },
+  "Wizard": {
+   "b": {
+    "addicts": 15,
+    "bonus": 15,
+    "score": 15
+   },
+   "s": "",
+   "unlock": "Unknown"
+  },
+  "Vampire": {
+   "b": {
+    "magnets": 30
+   },
+   "s": "No Monkeys",
+   "unlock": "20 video ads"
+  },
+  "Nerd": {
+   "b": {
+    "bonus": 30,
+    "score": 30
+   },
+   "s": "",
+   "unlock": "EUR 4.99"
+  },
+  "Nikandr": {
+   "b": {
+    "coins": 0
+   },
+   "s": "",
+   "unlock": "1 video ads"
+  },
+  "Mad Mask": {
+   "b": {
+    "addicts": 35,
+    "score": 35
+   },
+   "s": "",
+   "unlock": "Unknown"
+  },
+  "Cup": {
+   "b": {
+    "magnets": 20,
+    "addicts": 40
+   },
+   "s": "",
+   "unlock": "EUR 5.49"
+  },
+  "Smile": {
+   "b": {
+    "bonus": 35,
+    "score": 30
+   },
+   "s": "",
+   "unlock": "EUR 5.49"
+  },
+  "Eye": {
+   "b": {
+    "coins": 40,
+    "freezes": 25
+   },
+   "s": "",
+   "unlock": "EUR 5.49"
+  },
+  "Sleepy": {
+   "b": {
+    "addicts": 15,
+    "freezes": 15
+   },
+   "s": "No Snakes",
+   "unlock": "10 video ads"
+  },
+  "Fire": {
+   "b": {
+    "bonus": 35
+   },
+   "s": "No Monkeys",
+   "unlock": "EUR 5.49"
+  },
+  "A4": {
+   "b": {
+    "addicts": 30,
+    "freezes": 40
+   },
+   "s": "",
+   "unlock": "EUR 5.49"
+  },
+  "Leopard": {
+   "b": {
+    "coins": 30,
+    "score": 40
+   },
+   "s": "",
+   "unlock": "EUR 5.49"
+  },
+  "Piranha": {
+   "b": {
+    "magnets": 25,
+    "freezes": 50
+   },
+   "s": "",
+   "unlock": "EUR 5.49"
+  },
+  "Octopus": {
+   "b": {
+    "addicts": 25,
+    "bonus": 50
+   },
+   "s": "",
+   "unlock": "EUR 5.49"
+  },
+  "Spooky": {
+   "b": {
+    "coins": 25,
+    "freezes": 25
+   },
+   "s": "No Monkeys",
+   "unlock": "EUR 6.99"
+  }
+ }
+}

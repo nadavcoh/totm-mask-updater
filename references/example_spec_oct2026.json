@@ -1,0 +1,228 @@
+{
+ "coins": 62648,
+ "masks": {
+  "Travelboy": {
+   "lvl": 15,
+   "cost": 750
+  },
+  "Cyclop": {
+   "lvl": 15,
+   "cost": 750
+  },
+  "Chef": {
+   "lvl": 14,
+   "cost": 700
+  },
+  "Bull": {
+   "lvl": 11,
+   "cost": 550
+  },
+  "Monkey": {
+   "lvl": 10,
+   "cost": 500
+  },
+  "Bear": {
+   "lvl": 13,
+   "cost": 650
+  },
+  "Crow": {
+   "lvl": 17,
+   "cost": 850
+  },
+  "Koala": {
+   "lvl": 17,
+   "cost": 850
+  },
+  "Samurai": {
+   "lvl": 11,
+   "cost": 550
+  },
+  "Dog": {
+   "lvl": 13,
+   "cost": 650
+  },
+  "Pumpkin": {
+   "lvl": 12,
+   "cost": 600
+  },
+  "Kitty": {
+   "lvl": 17,
+   "cost": 850
+  },
+  "Cowboy": {
+   "lvl": 17,
+   "cost": 850
+  },
+  "Viking": {
+   "lvl": 12,
+   "cost": 600
+  },
+  "Pirate": {
+   "lvl": 16,
+   "cost": 800
+  },
+  "Rabbit": {
+   "lvl": 14,
+   "cost": 700
+  },
+  "Diver": {
+   "lvl": 11,
+   "cost": 550
+  },
+  "Shapito": {
+   "lvl": 12,
+   "cost": 600
+  },
+  "Frankie": {
+   "lvl": 17,
+   "cost": 850
+  },
+  "Knight": {
+   "lvl": 14,
+   "cost": 700
+  },
+  "Skull": {
+   "lvl": 17,
+   "cost": 850
+  },
+  "Jester": {
+   "lvl": 16,
+   "cost": 800
+  },
+  "Voodoo": {
+   "lvl": 17,
+   "cost": 850
+  },
+  "Screamy": {
+   "lvl": 13,
+   "cost": 650
+  },
+  "Wizard": {
+   "lvl": 20,
+   "cost": 1000
+  },
+  "Vampire": {
+   "lvl": 20,
+   "cost": 1000
+  },
+  "Nikandr": {
+   "lvl": 21,
+   "cost": 1050
+  },
+  "Mad Mask": {
+   "lvl": 18,
+   "cost": 900
+  },
+  "Smile": {
+   "lvl": 12,
+   "cost": 600
+  },
+  "Sleepy": {
+   "lvl": 19,
+   "cost": 950
+  },
+  "Piranha": {
+   "lvl": 11,
+   "cards": [
+    10,
+    12
+   ]
+  },
+  "Spooky": {
+   "lvl": 12,
+   "cost": 600
+  },
+  "Robin": {
+   "lvl": 13,
+   "cost": 650
+  },
+  "King": {
+   "lvl": 14,
+   "cost": 700
+  },
+  "Fire": {
+   "lvl": 15,
+   "cost": 750
+  },
+  "Leopard": {
+   "lvl": 15,
+   "cost": 750
+  },
+  "Octopus": {
+   "lvl": 25,
+   "cards": [
+    11,
+    26
+   ]
+  },
+  "Spaceman": {
+   "lvl": 14,
+   "cost": 700
+  },
+  "Spectrum": {
+   "lvl": 16,
+   "cost": 800
+  },
+  "Agent": {
+   "lvl": 10,
+   "cost": 500
+  },
+  "Plague": {
+   "lvl": 13,
+   "cost": 650
+  },
+  "Demon": {
+   "lvl": 13,
+   "cost": 650
+  },
+  "Hippo": {
+   "lvl": 17,
+   "cost": 850
+  },
+  "Froggy": {
+   "lvl": 13,
+   "cost": 650
+  },
+  "Eagle": {
+   "lvl": 26,
+   "cost": 1300
+  },
+  "A4": {
+   "lvl": 12,
+   "cost": 600
+  },
+  "Alien": {
+   "lvl": 1,
+   "cost": 50
+  },
+  "Assassin": {
+   "lvl": 17,
+   "cost": 850
+  },
+  "Piggy": {
+   "lvl": 34,
+   "cards": [
+    22,
+    35
+   ]
+  },
+  "Slime": {
+   "lvl": 1,
+   "cost": 50
+  },
+  "Black": {
+   "lvl": 1,
+   "cost": 50
+  }
+ },
+ "locked": [
+  "Robot",
+  "Zombie",
+  "Anonym",
+  "Mouse",
+  "Gas",
+  "Nerd",
+  "Cup",
+  "Eye"
+ ]
+}
